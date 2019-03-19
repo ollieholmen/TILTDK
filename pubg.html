@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>TILTDK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Hjem</a>
+  <a href="kal.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Begivenheder</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Ekstra <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="bots.html" class="w3-bar-item w3-button">Bots</a>
+      <a href="online.html" class="w3-bar-item w3-button">Online</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class=""></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Holdet</a>
+    <a href="#work" class="w3-bar-item w3-button">Turneringer</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Begivenheder</a>
+    <a href="#contact" class="w3-bar-item w3-button">Kontakt</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="Billeder/teamtiltsailing.ch.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">TILTDK Gaming community</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Oh Halløj!</h4>
+      <h5>Velkommen til <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Det her er sejt</p>
+      <p>Join vores discord server <a class="w3-text-teal" href="https://discord.gg/rH9ZbYd">TILTDK</a></p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p></p>
+    </footer>
+  </div>
+</div>
+
+<center>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScykIfLzT49_VzkwO-XnbeTpClyUwc7jFH7TWqdV4mneGRCpQ/viewform?embedded=true" width="640" height="1016" frameborder="0" marginheight="0" marginwidth="0">Indlæser...</iframe>
+</center>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+        <h4>Følg os</h4>
+        <a href="https://discord.gg/rH9ZbYd">
+          <img src="Billeder/Discord-Logo+Wordmark-Color.png" alt="discord">
+        </a>
+        <p>Powered by<strong> TILTDK</strong></p>
+      </footer>
+      
+      <script>
+      // Script for side navigation
+      function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "300px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+      }
+      
+      // Close side navigation
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+      
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      </script>
+      
+      </body>
